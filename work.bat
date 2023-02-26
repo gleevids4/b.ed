@@ -16,7 +16,7 @@ netsh advfirewall firewall set rule group="Remote Desktop" new enable=Yes
 REG ADD "HKLM\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp" /v "UserAuthentication" /t REG_DWORD /d 1 /f
 
 REM Create user account
-net user binni binnib /add
+net user binni P@ssw0rd /add
 
 REM Create tunnel
 .\ngrok\ngrok.exe tcp 3389
