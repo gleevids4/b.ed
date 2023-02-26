@@ -14,3 +14,4 @@ jobs:
 
       - name: Run .bat file
         run: ./work.bat
+
