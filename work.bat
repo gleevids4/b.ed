@@ -18,5 +18,9 @@ REG ADD "HKLM\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-T
 REM Create user account
 net user binni P@ssw0rd /add
 
+REM Add user account to Remote Desktop Users group
+net localgroup "Remote Desktop Users" binni /add
+
 REM Create tunnel
 .\ngrok\ngrok.exe tcp 3389
+
